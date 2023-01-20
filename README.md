@@ -45,6 +45,11 @@
 
 ### Day 2: Thu, Jan 19th
 | Time  | Session |
+
+API Request and Response
+=======
+https://docs.google.com/document/d/1TBZSDz2ql9VuMizONs33Fm9fIherxHB9/edit?usp=sharing&ouid=105120146770870508411&rtpof=true&sd=true
+
 | :------------- | :------------- |
 | 9:30am  | Settle in, breakfast  |
 | 10am  | DEI at Schrodinger |
