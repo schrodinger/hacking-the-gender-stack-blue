@@ -22,7 +22,7 @@ class Proprieties(APIView):
         smiles = data.validated_data["smiles"]
         mol = Chem.MolFromSmiles(smiles)
         prop = QED.proprieties(mol)
-
+        rule5 = prop[0] < 500 and prop[1] <= 5 and prop[2] <= 5 and prop[3] <= 10
         # convert prop
         propJSON = {
             "MW": prop[0],
@@ -33,6 +33,7 @@ class Proprieties(APIView):
             "ROTB": prop[5],
             "AROM": prop[6],
             "ALERTS": prop[7],
+            "RULEOF5": rule5,
         }
 
         return HttpResponse(propJSON, content_type="applications/json")
